@@ -454,6 +454,7 @@ typedef struct EmscriptenWebGLContextAttributes {
     EM_WEBGL_POWER_PREFERENCE powerPreference;
   };
   EM_BOOL failIfMajorPerformanceCaveat;
+  EM_BOOL desynchronized;
 
   int majorVersion;
   int minorVersion;

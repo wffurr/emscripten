@@ -1961,6 +1961,9 @@ Struct
 
     If ``true``, requests context creation to abort if the browser is only able to create a context that does not give good hardware-accelerated performance. Default value: ``false``.
 
+  .. c:member:: EM_BOOL desynchronized
+
+    If ``true``, requests a desynchronized canvas context.  Frame updates to canvas content will not be synchronized with DOM updates, and you may see tearing or flicker artifacts.  On supported browsers and operating systems, this will reduce the latency by bypassing the compositor and as much of the display stack as possible.  Pair with preserveDrawingBuffer: true and align the pixel buffer with the display panel for best results.  Default value: ``false``.
 
   .. c:member:: int majorVersion
     int minorVersion
